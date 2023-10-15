@@ -1,9 +1,11 @@
 // import { OimoJSPlugin } from '@babylonjs/core';
+import { Injectable } from '@angular/core';
 import { Engine } from '@babylonjs/core/Engines/engine';
 import { Scene } from '@babylonjs/core/scene';
 import { Color4, Vector3 } from '@babylonjs/core/Maths/math';
 import { GameEnum } from './game-enum';
 
+@Injectable({ providedIn: 'root' })
 export class GameEngine {
 	public engine: any;
 	public canvas: any;
